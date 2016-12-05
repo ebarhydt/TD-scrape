@@ -8,8 +8,8 @@ module Smccrawler
 
       def login
         browser.goto LOGIN_URL
-        browser.text_field(id: 'email').set 'eng@tawkify.com'
-        browser.text_field(id: 'password').set 'td1Tawk7'
+        browser.text_field(id: 'email').set ''
+        browser.text_field(id: 'password').set ''
         browser.input(id: 'but_login').click
 
         # Watir::Wait.until { browser.title.casecmp(LANDING_PAGE_TITLE) == 0 }
